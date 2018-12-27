@@ -1,0 +1,264 @@
+body {
+    font-family: Roboto;
+    color: white;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 670px;
+    background-image: url("../img/background.png"), linear-gradient(45deg, #1a0033, #6600cc);
+    background-blend-mode: overlay; 
+    display: flex;
+    flex-direction: column;
+}
+
+.header { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+    margin-left: 331px;
+    margin-right: 329px;
+    
+}
+
+.logo-title {
+    font-size: 30pt;
+    color: #00E0D0; 
+    font-weight: 100;
+    /* width: 73px; */
+}
+    
+.logo-pic {
+    display: block;
+    height: 50px;
+    margin-right: 11px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 286px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.nav-element {
+    margin: 5px;
+    padding: 5px; 
+    font-size: 13pt;
+    line-height: 36px;
+}
+
+.nav-element:first-child {
+    color: #00E0D0;
+}
+
+.content-container {
+    width: 100%;
+    margin-top: 163px;    
+}
+
+.title {
+    font-size: 32px;
+    font-family: Playfair Display;
+    font-weight: bold;
+    width: 510px;
+    margin: auto;
+    margin-bottom: 21px;
+}
+
+.border {
+    display: inherit;
+    content: "";
+    margin: auto;
+    width: 50px;
+    height: 1px;
+    background-color: #00E0D0;
+}
+
+.content {
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 771px;
+    font-weight: 300;
+    font-size: 11pt;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    background-color: transparent;
+    border: 1px solid #00E0D0;
+    color: #00E0D0;
+    text-transform: capitalize;
+}
+
+.story {
+    width: 100%;
+    height: 402px;
+    margin-top: 70px;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.logo-big {
+    display: block;
+    height: 229px;
+    /* margin-left: 395px; */
+    margin-right: 100px;
+}
+
+.story-container {
+    width: 538px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    color: rgb(65, 61, 75)
+}
+
+.story-title {
+    text-transform: uppercase;
+    font-family: Playfair Display;
+    font-weight: bold;
+}
+
+.story-content {
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+p {
+    display: block;
+    padding-top: 28px;
+}
+
+.story-video {
+    background-image: url("../img/background2.png"), linear-gradient(45deg, #1a0033, #6600cc);
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 550px;;
+    /* display: flex;
+    flex-flow: column;
+    justify-content: center; */
+}
+
+.video {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin: auto;
+    padding-top:220px;
+}
+
+
+
+.video-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 34px;
+
+}
+
+.expertise {
+    background-color: white;
+    width: 100%;
+    height: 755px;
+}
+
+.expertise-container {
+    /* width: 538px; */
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    color: rgb(65, 61, 75);
+}
+
+.expertise-title {
+    margin: auto;
+    padding-top: 73px;
+    text-transform: uppercase;
+    font-family: Playfair Display;
+    font-weight: bold;
+    width: 130px;
+}
+
+.subtitle {
+    margin: auto;
+    padding-top: 16px;
+    font-family: Playfair Display;
+    padding-bottom: 18px;
+    
+}
+
+.border-1 {
+    display: inherit;
+    content: "";
+    margin: auto;
+    width: 50px;
+    height: 1px;
+    background-color: rgb(65, 61, 75);
+}
+
+.expertise-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section-1, .section-2, .section-3 {
+    width: 318px;
+}
+
+.grid-container {
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-right: 55px; */
+}
+
+.grid-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgba(65, 61, 75, 255);
+    text-align: center;
+    margin-top: 39px;
+    
+}
+
+ .grid-element {
+    display: block;
+    margin: auto;    
+}
+
+.grid-content {
+    padding-top: 25px;
+    font-weight: 300;
+    color: rgba(51, 51, 51, 255);
+}
