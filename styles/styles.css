@@ -2,11 +2,12 @@ body {
     font-family: Roboto;
     color: white;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .container {
-    width: 100%;
     height: 670px;
+    max-height: 100%;
     background-image: url("../img/background.png"), linear-gradient(45deg, #1a0033, #6600cc);
     background-blend-mode: overlay; 
     display: flex;
@@ -96,15 +97,39 @@ body {
     text-align: center;
 }
 
-.button {
-    display: block;
-    width: 120px;
-    height: 40px;
-    margin: auto;
+.button, .button-1, .button-2 {
     background-color: transparent;
     border: 1px solid #00E0D0;
     color: #00E0D0;
     text-transform: capitalize;
+}
+
+.button, .button-1 {
+    display: block;
+    width: 120px;
+    height: 40px;
+}
+
+.button {
+    margin: auto;
+}
+
+.button-1 {
+    margin-top: 31px;
+}
+
+.button-2 {
+    width: 140px;
+    height: 40px;
+    text-transform: uppercase;
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 900;
+    font-size: 9pt;
+    margin-bottom: 69px;
+}
+
+.button-2:last-child {
+    margin: 0;
 }
 
 .story {
@@ -152,7 +177,7 @@ p {
     background-image: url("../img/background2.png"), linear-gradient(45deg, #1a0033, #6600cc);
     background-blend-mode: overlay;
     width: 100%;
-    height: 550px;;
+    height: 550px;
     /* display: flex;
     flex-flow: column;
     justify-content: center; */
@@ -167,7 +192,6 @@ p {
 }
 
 
-
 .video-title {
     text-transform: uppercase;
     font-weight: 900;
@@ -180,20 +204,15 @@ p {
 .expertise {
     background-color: white;
     width: 100%;
-    height: 755px;
-}
-
-.expertise-container {
-    /* width: 538px; */
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
+    align-items: center;
     color: rgb(65, 61, 75);
 }
 
 .expertise-title {
-    margin: auto;
-    padding-top: 73px;
+    padding-top: 71px;
     text-transform: uppercase;
     font-family: Playfair Display;
     font-weight: bold;
@@ -201,46 +220,56 @@ p {
 }
 
 .subtitle {
-    margin: auto;
     padding-top: 16px;
     font-family: Playfair Display;
     padding-bottom: 18px;
-    
+
 }
 
 .border-1 {
     display: inherit;
     content: "";
-    margin: auto;
     width: 50px;
     height: 1px;
-    background-color: rgb(65, 61, 75);
+    background-color: #ebebeb;
+    margin-bottom: 48px;
 }
 
-.expertise-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 70px;
-}
-
-.first-row {
+.row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.section-1, .section-2, .section-3 {
+.section {
     width: 318px;
+    height: 250px;
+    padding-bottom: 39px;
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+
+}
+
+.section:last-child {
+    border-right: none;
 }
 
 .grid-container {
-    margin: auto;
     display: flex;
     flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    /* padding-right: 55px; */
+    /*align-items: space-around;*/
+    justify-content: flex-start;
+    height: 250px;
+    text-align: center;
+}
+
+.grid-content {
+    text-align: center;
+    padding-right: 33px;
+    padding-left: 33px;
+    padding-top: 25px;
+    font-weight: 300;
+    color: rgba(51, 51, 51, 255);
 }
 
 .grid-title {
@@ -249,16 +278,187 @@ p {
     color: rgba(65, 61, 75, 255);
     text-align: center;
     margin-top: 39px;
-    
+
 }
 
  .grid-element {
     display: block;
-    margin: auto;    
+    height: 50px;
+    margin: auto;
+     margin-top: 39px;
 }
 
-.grid-content {
-    padding-top: 25px;
-    font-weight: 300;
-    color: rgba(51, 51, 51, 255);
+.team {
+    background-image: url("../img/background3.png"), linear-gradient(45deg, #1a0033, #6600cc);
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 670px;
+    max-height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.team-title {
+    padding-top: 71px;
+    text-transform: uppercase;
+    font-family: Playfair Display;
+    font-weight: 900;
+    text-align: center;
+}
+
+.team-subtitle {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-weight: normal;
+    padding-bottom: 18px;
+    padding-top: 16px;
+}
+
+.team-grid {
+    display: flex;
+    flex-flow: row;
+}
+
+
+.team-grid-element {
+    margin-right: 20px;
+    border: 1px solid white;
+}
+
+.team-grid-element:last-child{
+    margin-right: 0;
+}
+
+
+.team-grid-title {
+    width: 220px;
+    height: 79px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.person, .position {
+    display: block;
+    text-align: center;
+}
+
+.person {
+    padding-top: 0;
+    line-height: 10px;
+    font-weight: 900;
+}
+
+.position {
+    padding-top: 12px;
+    font-weight: 100;
+    font-size: 9pt;
+    line-height: 9px;
+}
+
+
+.works-header {
+    height: 157px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.works-title {
+    text-transform: uppercase;
+    color: rgba(65, 61, 75, 255);
+    font-weight: 700;
+    font-family: "Playfair Display";
+}
+
+a {
+    text-decoration: none;
+    color: rgba(65, 61, 75, 255);
+    font-weight: 100;
+    font-size: 8pt;
+}
+
+.works-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.works-img {
+    display: block;
+    border: none;
+}
+
+.works-footer {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback {
+    height: 500px;
+    background-image: url("../img/background.png"), linear-gradient(45deg, #1a0033, #6600cc);
+    background-blend-mode: overlay;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-content {
+    width: 770px;
+    margin-top: 42px;
+    font-family: "Playfair Display";
+}
+
+.feedback-title {
+    margin-top: 52px;
+}
+
+.feedback-row {
+    margin-top: 45px;
+    width: 369px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-left {
+    margin-left: 12px;
+}
+
+.link-right {
+    margin-right: 12px;
+    width: 11px;
+    height: 21px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+}
+
+.clients-container {
+    display: flex;
+    flex-direction: row;
 }
